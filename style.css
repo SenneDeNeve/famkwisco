@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+    max-width: 50%;
+}
+
+nav {
+    background: #f4f4f4;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0077ee;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+button {
+    background: #0077ee;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+@media (max-width: 600px) {
+    nav a { font-size: 15px; }
+    header img { width: 90px; }
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.general-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 25px;
+    line-height: 1.6;
+}
+
+.general-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.general-container h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.general-container h3 {
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.general-container p, 
+.general-container ol {
+    margin-bottom: 15px;
+}
+
+.general-container ol {
+    margin-left: 25px;
+}
+
+.general-container,
+.general-container h1,
+.general-container h2,
+.general-container h3,
+.general-container p,
+.general-container ol,
+.general-container ul {
+    text-align: left;
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cv-table td {
+    padding: 8px 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.cv-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cv-table td:first-child {
+    width: 35%;
+    font-weight: bold;
+}
+
+.president-section {
+    overflow: auto; /* prevents layout collapse */
+}
+
+.profile-photo {
+    float: left;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 20px 20px 0; /* space around the image */
+}
+
+.profile-photo-large-center {
+    display: block;          /* allows margin auto centering */
+    margin: 25px auto;       /* space above and below */
+    width: 260px;            /* adjust size as desired */
+    max-width: 90%;          /* ensures scaling on mobile */
+    height: auto;
+    border-radius: 10px;     /* nice softened edges */
+}
+
+.image-container {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* optional, remove if you want straight corners */
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap; /* ensures mobile compatibility */
+    text-align: center;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 150px;
+}
+
+.info-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info-item h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 14px;
+    line-height: 1.4;
+}
